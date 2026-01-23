@@ -1,2 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+:root {
+    --branco: #fff;
+    --preto: #000;
+    --bg-color1: #323b45;
+    --bg-color2: #101623;
+    --container-bg-color: #1e1f24;
+    --header-color1: #2c2e45;
+    --header-color2: #545d70;
+    --link-hover-color: #ffae00;
+    --banner-shadow-color-1: #000000f4;
+    --banner-shadow-color-2: #00000000;
+    --box-bg-color: #2b2c44;
+    --bar-color1: #787f9a;
+    --bar-color2: #ffae00;
+    --btn-color1: #449225;
+    --btn-color2: #c1ffa8;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color1);
+    background-color: linear-gradient(
+        180deg, 
+        var(--bg-color1) 0%, 
+        var(--bg-color2) 100%
+        );
+        width: 100vw;
+        height: 100vh;
+}
