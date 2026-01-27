@@ -110,7 +110,6 @@ a:hover {
         var(--banner-shadow-color-1) 0%, 
         var(--banner-shadow-color-2) 50%,
         var(--banner-shadow-color-2) 100%
-
     );
     position: relative;
 }
@@ -118,4 +117,19 @@ a:hover {
 #banner h1 {
     position: relative;
     font-size: 65px;
+    top: -160px;
+    left: 40px;
+    text-transform: uppercase;
+}
+
+#Info {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+#sobre, #habilidades, #projetos {
+    background-color: var(--box-bg-color);
+    padding: 20px;
+    border-radius: 10px;
 }
