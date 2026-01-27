@@ -23,12 +23,99 @@ body {
     justify-content: space-around;
     margin: 0;
     padding: 0;
-    background-color: var(--bg-color1);
-    background-color: linear-gradient(
+
+    background: linear-gradient(
         180deg, 
         var(--bg-color1) 0%, 
         var(--bg-color2) 100%
-        );
-        width: 100vw;
-        height: 100vh;
+    );
+
+    width: 100vw;
+    height: 100vh;
+
+    color: var(--branco);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+#container {
+    background-color: var(--container-bg-color);
+    width: 1280px;
+    margin: 50px;
+    min-height: calc(100vh - 100px);
+    flex-grow:1;
+    box-shadow: 10px 10px 40px var(--banner-shadow-color-1);
+}
+
+header {
+    background: linear-gradient(
+        90deg, 
+        var(--header-color1) 0%, 
+        var(--header-color2) 100%
+    );
+    padding: 20px 40px;
+    box-shadow: 0px 4px 10px var(--banner-shadow-color-1);
+}
+
+nav  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav > img {
+    align-self: flex-start;
+    margin: 10px 3vww;
+
+}
+
+nav > ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10vw;
+ 
+}
+
+nav > ul > li {
+    text-decoration: none;
+    display: inline;
+}
+
+a{
+    color: var(--branco);
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+#banner {
+    height: 600px;
+    background-image: url("../images/banner.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner-shadow {
+    height: 100%;
+    background: linear-gradient(
+        0deg, 
+        var(--banner-shadow-color-1) 0%, 
+        var(--banner-shadow-color-2) 50%,
+        var(--banner-shadow-color-2) 100%
+
+    );
+    position: relative;
+}
+
+#banner h1 {
+    position: relative;
+    font-size: 65px;
 }
