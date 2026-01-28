@@ -30,12 +30,10 @@ body {
         var(--bg-color2) 100%
     );
 
-    width: 100vw;
-    height: 100vh;
-
-    color: var(--branco);
     font-family: 'Roboto', sans-serif;
+    color: var(--branco);
     letter-spacing: 2px;
+    overflow-x: hidden;
 }
 
 #container {
@@ -122,14 +120,36 @@ a:hover {
     text-transform: uppercase;
 }
 
-#Info {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+
+#sobre {
+    flex: 1;
 }
-#sobre, #habilidades, #projetos {
-    background-color: var(--box-bg-color);
-    padding: 20px;
-    border-radius: 10px;
+
+div.title{
+    background: linear-gradient(
+        90deg, 
+        var(--banner-shadow-color-1) 0%, 
+        var(--banner-shadow-color-2) 100%,
+    );
+    font-size: 36px;
+    padding: 10px 30px;
+    margin: 0 0 20px 0;
+}
+#info {
+    display: flex
+    justify-content: space-between;
+}
+
+#sobre p{
+    margin: 30px;
+
+}
+
+p {
+    font-size: 28px;
+    font-weight: lighter;    
+}
+
+#habilidades {
+    flex: 1;
 }
