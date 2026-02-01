@@ -99,6 +99,8 @@ a:hover {
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    
 }
 
 #banner-shadow {
@@ -120,6 +122,13 @@ a:hover {
     text-transform: uppercase;
 }
 
+#info {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+    align-items: flex-start;
+}
 
 #sobre {
     flex: 1;
@@ -135,14 +144,10 @@ div.title{
     padding: 10px 30px;
     margin: 0 0 20px 0;
 }
-#info {
-    display: flex
-    justify-content: space-between;
-}
 
-#sobre p{
-    margin: 30px;
 
+#sobre p {
+    margin: 20px 0;
 }
 
 p {
@@ -152,4 +157,54 @@ p {
 
 #habilidades {
     flex: 1;
+    scroll-margin-right: 30px;  
+    margin-top: -180px;
+    z-index: 100;
 }
+
+#social {
+    display:flex
+}
+
+#social img{
+    width:50px;
+    padding: 10px;
+}
+
+#social img:hover{
+    width:55px;
+    transition: width 0.1s;
+}
+
+.resumo {
+    padding: 20px;
+    background-color: var(--box-bg-color);
+    border-radius: 10px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.resumo h3 {
+    margin-top:0;
+    padding: 0;
+}
+.resumo a{
+    text-orientation: uppercase;
+    background-color: var(--btn-color1);
+    color: var(--branco);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.resumo a:hover{
+    background-color: var(--btn-color2);
+    color: var(--btn-color1);
+}   
