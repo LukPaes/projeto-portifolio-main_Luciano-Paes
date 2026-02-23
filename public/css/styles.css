@@ -99,8 +99,6 @@ a:hover {
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    
 }
 
 #banner-shadow {
@@ -116,18 +114,30 @@ a:hover {
 
 #banner h1 {
     position: relative;
-    font-size: 65px;
-    top: -160px;
+    top: -180px;
     left: 40px;
+    font-size: 65px;
     text-transform: uppercase;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+#projetos, #info {
+    margin-bottom: 40px;
 }
 
 #info {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
-    padding: 40px;
-    align-items: flex-start;
 }
 
 #sobre {
@@ -145,9 +155,9 @@ div.title{
     margin: 0 0 20px 0;
 }
 
-
 #sobre p {
-    margin: 20px 0;
+    margin: 30px;
+    margin-right: 50px;
 }
 
 p {
@@ -156,9 +166,13 @@ p {
 }
 
 #habilidades {
-    flex: 1;
-    scroll-margin-right: 30px;  
     margin-top: -180px;
+    margin-right: 30px;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    scroll-margin-right: 30px;  
     z-index: 100;
 }
 
@@ -166,9 +180,15 @@ p {
     display:flex
 }
 
-#social img{
-    width:50px;
-    padding: 10px;
+#social img {
+    width: 50px;
+    padding: 10px 0 0 30px;
+    transition: width 100ms;
+    transition-behavior: normal;
+    transition-duration: 100ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: width;
 }
 
 #social img:hover{
@@ -187,20 +207,22 @@ h3 {
     font-size: 36px;
 }
 
-.resumo h3 {
-    margin-top:0;
-    padding: 0;
+#resumo h3 {
+ margin-top: 0;
+ padding: 0;
 }
 .resumo a{
     text-orientation: uppercase;
     background-color: var(--btn-color1);
     color: var(--branco);
+    letter-spacing: 2px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     font-size: 16px;
     font-weight: bold;
-    transition: all 0.5s ease-in-out;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
     
 }
 
@@ -208,3 +230,38 @@ h3 {
     background-color: var(--btn-color2);
     color: var(--btn-color1);
 }   
+
+#habilidades > h3 {
+  padding: 20px
+}
+
+#habilidades .technologias {
+    padding: 20px;
+    display: flex;
+    background-color: var(--box-bg-color);
+    border-radius: 10px;
+    justify-content: stretch;
+    align-items: center;
+    gap: 10px;
+}
+
+#habilidades .technologias img {
+    width: 50px;
+    height: 50px;
+}
+
+#habilidades .technologias span {
+    font-size: 24px;
+}
+
+#habilidades .technologias .bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--bar-color1);
+    border-radius: 10px;
+}
+
+#habilidades .technologias .bar div {
+    height: 100%;
+    background-color: var(--bar-color2);
+}
