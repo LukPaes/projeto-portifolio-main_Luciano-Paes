@@ -174,8 +174,6 @@ p {
     flex-basis: 0%;
     scroll-margin-right: 30px;
     z-index: 100;
-    /* Compensa o margin negativo para o conteúdo não ficar atrás do banner */
-    padding-top: 180px;
 }
 
 #social {
