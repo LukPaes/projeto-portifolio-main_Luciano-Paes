@@ -211,36 +211,44 @@ h3 {
 }   
 
 #habilidades > h3 {
-  padding: 20px
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #habilidades .technologias {
     padding: 20px;
-    display: flex;
     background-color: var(--box-bg-color);
     border-radius: 10px;
+    display: flex;
     justify-content: stretch;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
-#habilidades .technologias img {
+.technologias img {
     width: 50px;
     height: 50px;
 }
 
-#habilidades .technologias span {
-    font-size: 24px;
+.technologias > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-#habilidades .technologias .bar {
-    width: 100%;
-    height: 10px;
+.technologias > div > span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.bar {
+    height: 20px;
     background-color: var(--bar-color1);
     border-radius: 10px;
 }
-
-#habilidades .technologias .bar div {
-    height: 100%;
+.bar div{
+    height: 20px;
     background-color: var(--bar-color2);
-}
+    border-radius: 10px;
+}}
