@@ -6,6 +6,17 @@
         <title>Portifólio - Refatorando</title>
         <link rel="icon" href="public/images/logo-refatorando.png" type="image/x-icon">
         <link rel="stylesheet" href="public/css/styles.css">
+        <script>
+            function showMenu(){
+                let menu = document.querySelector("nav ul");
+                if (menu.style.display === "block"){
+                    menu.style.display = "none";
+                }
+                else{
+                    menu.style.display = "block";
+                }
+            }
+        </script>
     </head>
     <body>
         <div id="container"> 
@@ -14,8 +25,7 @@
                     <img 
                         src="./public/images/logo-refatorando.png" 
                         alt="logo Refatorando"
-                        height="40"
-                    />
+                        height="40"/>
                         <ul>
                             <li><a href="#">HOME</a></li>
                             <li><a href="#habilidades">HABILIDADES</a></li>
@@ -23,6 +33,12 @@
                             <li><a href="#projetos">PROJETOS</a></li>
                             <li><a href="#contatos">CONTATOS</a></li>
                         </ul>   
+                        <img 
+                            id = "menu-hamburger" 
+                            src="./public/images/icon-menu.svg" 
+                            width="40"
+                            onclick="showMenu()"/>
+
                 </nav>
             </header>
             <div id="banner">
